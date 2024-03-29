@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @EnvironmentObject var viewModel : PostViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Text("Welcome !").font(.largeTitle).bold()
+                .navigationTitle("iSync")
+                .navigationBarItems(leading: Button {
+                    viewModel.logout()
+                } label: {
+                    Text("logout")
+                }, trailing: Button {
+                    //
+                } label: {
+                    Text("Next")
+                })
+        }
     }
 }
 

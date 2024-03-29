@@ -11,7 +11,7 @@ struct LoginView: View {
     
     @State private var email = ""
     @State private var password = ""
-    @EnvironmentObject var login : PostViewModel
+    @EnvironmentObject var viewModel : PostViewModel
     
     var body: some View {
         ZStack {
@@ -21,6 +21,8 @@ struct LoginView: View {
                     .font(.largeTitle)
                     .bold()
                     .foregroundColor(.white)
+                
+                Text("👽").font(.largeTitle)
                 
                 Spacer()
                 
@@ -41,7 +43,7 @@ struct LoginView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
                 Button {
-                    login.login(email: email, password: password)
+                    viewModel.login(email: email, password: password)
                 } label: {
                     Text("Login").foregroundColor(.white).bold()
                 }

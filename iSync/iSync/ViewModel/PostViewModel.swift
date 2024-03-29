@@ -9,12 +9,19 @@ import Foundation
 
 class PostViewModel : ObservableObject {
     
-    @Published var authenticated = 0
+    @Published var authenticated : Int
     
-    /*init() {
-     //TEST
-        login(email: "eve.holt@reqres.in", password: "cityslicka")
-    }*/
+    init() {
+        
+        if let statusLogin = UserDefaults.standard.object(forKey: "logged") as? Int {
+            authenticated = statusLogin
+        } else {
+            authenticated = 0
+        }
+        
+        /* //TEST
+        login(email: "eve.holt@reqres.in", password: "cityslicka")*/
+    }
     
     func login(email: String, password: String){
         guard let secureURL = URL(string: "https://reqres.in/api/login") else { return }
@@ -37,6 +44,7 @@ class PostViewModel : ObservableObject {
                 if !decodedData.token.isEmpty {
                     DispatchQueue.main.async {
                         self.authenticated = 1
+                        UserDefaults.standard.set(1, forKey: "logged")
                     }
                 }
             } catch let error as NSError {
@@ -49,4 +57,10 @@ class PostViewModel : ObservableObject {
         }.resume()
         
     }
+    
+    func logout(){
+        UserDefaults.standard.removeObject(forKey: "logged")
+        authenticated = 0
+    }
+    
 }
