@@ -11,6 +11,10 @@ struct UserListModel : Decodable {
     var data : [UserProfileModel]
 }
 
+struct UserDetailModel : Decodable {
+    var data : UserProfileModel
+}
+
 struct UserProfileModel : Decodable {
     var id : Int
     var first_name : String

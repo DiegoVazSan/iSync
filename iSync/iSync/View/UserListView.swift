@@ -16,17 +16,19 @@ struct UserListView: View {
             ProgressView()
         } else {
             List(viewModel.userProfielData.data, id: \.id) { item in
-                HStack {
-                    //AsyncImage(url: URL(string: item.avatar)).clipShape(Circle())
-                    Image(systemName: "persona.fill").data(strURL: item.avatar)
-                        .frame(width:80, height: 80)
-                        .clipped()
-                        .clipShape(Circle())
-                    VStack(alignment: .leading) {
-                        Text(item.first_name).font(.title)
-                        Text(item.email).font(.subheadline)
-                    }.padding()
-                }.navigationBarTitle("MyFriends")
+                NavigationLink(destination: DetailView(id: item.id)) {
+                    HStack {
+                        //AsyncImage(url: URL(string: item.avatar)).clipShape(Circle())
+                        Image(systemName: "persona.fill").data(strURL: item.avatar)
+                            .frame(width:130, height: 130)
+                            .clipped()
+                            .clipShape(Circle())
+                        VStack(alignment: .leading) {
+                            Text(item.first_name).font(.title)
+                            Text(item.email).font(.subheadline)
+                        }.padding()
+                    }.navigationBarTitle("MyFriends")
+                }
             }
         }
     }
