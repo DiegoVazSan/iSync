@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct iSyncApp: App {
     var body: some Scene {
+        let login = PostViewModel()
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(login)
         }
     }
 }

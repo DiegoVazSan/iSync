@@ -13,6 +13,8 @@
 		DBE5F6D62BB6453E00364999 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE5F6D52BB6453E00364999 /* Preview Assets.xcassets */; };
 		DBE5F6DE2BB645BD00364999 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F6DD2BB645BD00364999 /* PostModel.swift */; };
 		DBE5F6E12BB646EA00364999 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F6E02BB646EA00364999 /* PostViewModel.swift */; };
+		DBE5F6E42BB64FA000364999 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F6E32BB64FA000364999 /* LoginView.swift */; };
+		DBE5F6E62BB64FBC00364999 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F6E52BB64FBC00364999 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		DBE5F6D52BB6453E00364999 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBE5F6DD2BB645BD00364999 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		DBE5F6E02BB646EA00364999 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		DBE5F6E32BB64FA000364999 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DBE5F6E52BB64FBC00364999 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		DBE5F6CD2BB6453B00364999 /* iSync */ = {
 			isa = PBXGroup;
 			children = (
+				DBE5F6E22BB64F8200364999 /* View */,
 				DBE5F6DF2BB646D300364999 /* ViewModel */,
 				DBE5F6DC2BB645A800364999 /* Model */,
 				DBE5F6CE2BB6453B00364999 /* iSyncApp.swift */,
@@ -87,6 +92,15 @@
 				DBE5F6E02BB646EA00364999 /* PostViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DBE5F6E22BB64F8200364999 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBE5F6E32BB64FA000364999 /* LoginView.swift */,
+				DBE5F6E52BB64FBC00364999 /* HomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +176,8 @@
 				DBE5F6E12BB646EA00364999 /* PostViewModel.swift in Sources */,
 				DBE5F6D12BB6453B00364999 /* ContentView.swift in Sources */,
 				DBE5F6DE2BB645BD00364999 /* PostModel.swift in Sources */,
+				DBE5F6E62BB64FBC00364999 /* HomeView.swift in Sources */,
+				DBE5F6E42BB64FA000364999 /* LoginView.swift in Sources */,
 				DBE5F6CF2BB6453B00364999 /* iSyncApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
