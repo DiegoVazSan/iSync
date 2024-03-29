@@ -9,14 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @EnvironmentObject var login : PostViewModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Group {
+            if login.authenticated == 0 {
+                LoginView()
+            } else if login.authenticated == 1 {
+                HomeView()
+            } else if login.authenticated == 2 {
+                VStack {
+                    Text("User and password incorrect")
+                    Button {
+                        login.authenticated = 0
+                    } label: {
+                        Text("Return")
+                    }
+
+                }
+            }
         }
-        .padding()
     }
 }
 

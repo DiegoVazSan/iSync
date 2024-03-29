@@ -15,14 +15,21 @@ struct LoginView: View {
     
     var body: some View {
         ZStack {
-            Color.purple.edgesIgnoringSafeArea(.all)
+            Color.indigo.edgesIgnoringSafeArea(.all)
             VStack {
+                Text("iSync app")
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundColor(.white)
+                
+                Spacer()
+                
                 Text("Email")
                     .foregroundColor(.white)
                     .bold()
                 TextField("Email", text: $email)
-                    .background(Color.white)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .background(Color.white)
                     .keyboardType(.emailAddress)
                 
                 
@@ -38,6 +45,8 @@ struct LoginView: View {
                 } label: {
                     Text("Login").foregroundColor(.white).bold()
                 }
+                
+                Spacer()
                 
             }
             .padding()
