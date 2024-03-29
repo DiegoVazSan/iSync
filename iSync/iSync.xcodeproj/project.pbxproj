@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBB04D1E2BB72DD600B771C9 /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB04D1D2BB72DD600B771C9 /* UserListModel.swift */; };
+		DBB04D202BB72EA400B771C9 /* UserDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB04D1F2BB72EA400B771C9 /* UserDataViewModel.swift */; };
+		DBB04D222BB7304200B771C9 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB04D212BB7304200B771C9 /* UserListView.swift */; };
 		DBE5F6CF2BB6453B00364999 /* iSyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F6CE2BB6453B00364999 /* iSyncApp.swift */; };
 		DBE5F6D12BB6453B00364999 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F6D02BB6453B00364999 /* ContentView.swift */; };
 		DBE5F6D32BB6453E00364999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE5F6D22BB6453E00364999 /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DBB04D1D2BB72DD600B771C9 /* UserListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
+		DBB04D1F2BB72EA400B771C9 /* UserDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewModel.swift; sourceTree = "<group>"; };
+		DBB04D212BB7304200B771C9 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		DBE5F6CB2BB6453B00364999 /* iSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE5F6CE2BB6453B00364999 /* iSyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSyncApp.swift; sourceTree = "<group>"; };
 		DBE5F6D02BB6453B00364999 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +93,7 @@
 			children = (
 				DBE5F6DD2BB645BD00364999 /* PostModel.swift */,
 				DBE5F6E92BB65D1200364999 /* UserModel.swift */,
+				DBB04D1D2BB72DD600B771C9 /* UserListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 			children = (
 				DBE5F6E02BB646EA00364999 /* PostViewModel.swift */,
 				DBE5F6E72BB65CF100364999 /* HomeViewModel.swift */,
+				DBB04D1F2BB72EA400B771C9 /* UserDataViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -105,6 +113,7 @@
 			children = (
 				DBE5F6E32BB64FA000364999 /* LoginView.swift */,
 				DBE5F6E52BB64FBC00364999 /* HomeView.swift */,
+				DBB04D212BB7304200B771C9 /* UserListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,13 +189,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBE5F6E12BB646EA00364999 /* PostViewModel.swift in Sources */,
+				DBB04D1E2BB72DD600B771C9 /* UserListModel.swift in Sources */,
 				DBE5F6D12BB6453B00364999 /* ContentView.swift in Sources */,
 				DBE5F6EA2BB65D1200364999 /* UserModel.swift in Sources */,
 				DBE5F6E82BB65CF100364999 /* HomeViewModel.swift in Sources */,
 				DBE5F6DE2BB645BD00364999 /* PostModel.swift in Sources */,
 				DBE5F6E62BB64FBC00364999 /* HomeView.swift in Sources */,
+				DBB04D222BB7304200B771C9 /* UserListView.swift in Sources */,
 				DBE5F6E42BB64FA000364999 /* LoginView.swift in Sources */,
 				DBE5F6CF2BB6453B00364999 /* iSyncApp.swift in Sources */,
+				DBB04D202BB72EA400B771C9 /* UserDataViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,19 +21,15 @@ struct HomeView: View {
                 List(homeViewModel.userData, id: \.id) { item in
                     VStack(alignment: .leading) {
                         Text(item.name).bold().font(.title3)
-                        HStack {
-                            Text("Lat: \(item.address.geo.lat), Lng: \(item.address.geo.lng)")
-                        }
+                        Text("Lat \(item.address.geo.lat), Lng \(item.address.geo.lng)")
                     }
                 }.navigationTitle("iSyncApp")
                     .navigationBarItems(leading: Button {
                         postViewModel.logout()
                     } label: {
                         Image(systemName: "door.left.hand.open").foregroundColor(.red)
-                    }, trailing: Button {
-                        //
-                    } label: {
-                        Image(systemName: "arrowshape.turn.up.forward.fill")
+                    }, trailing: NavigationLink(destination: UserListView()){
+                        Image(systemName: "person.2.fill").foregroundColor(.indigo)
                     })
             }
         }
