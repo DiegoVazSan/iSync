@@ -9,21 +9,31 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @EnvironmentObject var viewModel : PostViewModel
+    @EnvironmentObject var postViewModel : PostViewModel
+    @StateObject var homeViewModel = HomeViewModel()
     
     var body: some View {
         NavigationView {
-            Text("Welcome !").font(.largeTitle).bold()
-                .navigationTitle("iSync")
-                .navigationBarItems(leading: Button {
-                    viewModel.logout()
-                } label: {
-                    Text("logout")
-                }, trailing: Button {
-                    //
-                } label: {
-                    Text("Next")
-                })
+            
+            if homeViewModel.userData.isEmpty {
+                ProgressView()
+            } else {
+                List(homeViewModel.userData, id: \.id) { item in
+                    VStack(alignment: .leading) {
+                        Text(item.name).bold()
+                        Text(item.email)
+                    }
+                }.navigationTitle("iSyncApp")
+                    .navigationBarItems(leading: Button {
+                        postViewModel.logout()
+                    } label: {
+                        Text("logout")
+                    }, trailing: Button {
+                        //
+                    } label: {
+                        Text("Next")
+                    })
+            }
         }
     }
 }

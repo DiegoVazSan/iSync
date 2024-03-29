@@ -15,6 +15,8 @@
 		DBE5F6E12BB646EA00364999 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F6E02BB646EA00364999 /* PostViewModel.swift */; };
 		DBE5F6E42BB64FA000364999 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F6E32BB64FA000364999 /* LoginView.swift */; };
 		DBE5F6E62BB64FBC00364999 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F6E52BB64FBC00364999 /* HomeView.swift */; };
+		DBE5F6E82BB65CF100364999 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F6E72BB65CF100364999 /* HomeViewModel.swift */; };
+		DBE5F6EA2BB65D1200364999 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5F6E92BB65D1200364999 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		DBE5F6E02BB646EA00364999 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		DBE5F6E32BB64FA000364999 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		DBE5F6E52BB64FBC00364999 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DBE5F6E72BB65CF100364999 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DBE5F6E92BB65D1200364999 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				DBE5F6DD2BB645BD00364999 /* PostModel.swift */,
+				DBE5F6E92BB65D1200364999 /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				DBE5F6E02BB646EA00364999 /* PostViewModel.swift */,
+				DBE5F6E72BB65CF100364999 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 			files = (
 				DBE5F6E12BB646EA00364999 /* PostViewModel.swift in Sources */,
 				DBE5F6D12BB6453B00364999 /* ContentView.swift in Sources */,
+				DBE5F6EA2BB65D1200364999 /* UserModel.swift in Sources */,
+				DBE5F6E82BB65CF100364999 /* HomeViewModel.swift in Sources */,
 				DBE5F6DE2BB645BD00364999 /* PostModel.swift in Sources */,
 				DBE5F6E62BB64FBC00364999 /* HomeView.swift in Sources */,
 				DBE5F6E42BB64FA000364999 /* LoginView.swift in Sources */,
